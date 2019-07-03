@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Image-Checkbox" transform="translate(-330.000000, -31.000000)" fill="#FFFFFF" stroke="#CCD6DD">
+            <g id="Checkbox/Icon/Normal" transform="translate(330.000000, 31.000000)">
+                <rect id="Checkbox" x="0.5" y="0.5" width="14" height="14" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Image-Checkbox" transform="translate(-330.000000, -31.000000)">
+            <g id="Checkbox/Icon/Active" transform="translate(330.000000, 31.000000)">
+                <g id="Checkbox">
+                    <rect fill="#00B14F" x="0" y="0" width="15" height="15" rx="2"></rect>
+                    <path d="M5.38125553,4.29018238 C5.24274455,4.30917179 5.12210595,4.39071455 5.05285046,4.51135314 L3.27343114,7.62449918 C3.15055849,7.8389678 3.2253991,8.11152167 3.43986772,8.23439432 C3.65433634,8.35726696 3.92689021,8.28242635 4.04976286,8.06795773 L5.5376389,5.46305764 L11.022227,10.9644011 C11.1964828,11.1386569 11.4790898,11.1397739 11.6544626,10.9655181 C11.8287184,10.7912624 11.8298354,10.5086553 11.6555796,10.3332825 L5.77779907,4.43762956 L5.75657561,4.4164061 C5.67168178,4.33151227 5.55774533,4.28571429 5.4404578,4.28571429 C5.42035137,4.28571429 5.40136196,4.28683131 5.38125553,4.29018238 Z" id="Shape" stroke="#FFFFFF" fill="#FFFFFF" transform="translate(7.500000, 7.690684) scale(1, -1) translate(-7.500000, -7.690684) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

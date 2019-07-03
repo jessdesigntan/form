@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Upload Photo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Menu-Item" transform="translate(0.000000, -363.000000)">
+            <g id="Upload-Photo" transform="translate(0.000000, 363.000000)">
+                <g id="Photo">
+                    <rect id="Rectangle" stroke="#CCD6DD" fill="#FFFFFF" x="0.5" y="0.5" width="59" height="59" rx="8"></rect>
+                    <g id="Icons/22/Border" transform="translate(18.000000, 19.000000)" fill="#CCD6DD" font-family="anticon" font-size="22" font-weight="400">
+                        <text id="↳-Icon-Font">
+                            <tspan x="0" y="19"></tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

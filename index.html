@@ -1,0 +1,880 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timepicker@1.11.12/jquery.timepicker.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.12/jquery.timepicker.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="hero">
+        <img src="images/grab_logo.svg" width="80px" class="mb-3">
+        <h5 class="mb-4">GrabFood Change Request Form</h5>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="card options-card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Update Options/Opsi Pembaruan
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" >
+            <div class="card-body">
+              <p class="lead">Please fill up your restaurant details./Silakan isi detail restoran Anda.</p>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Restaurant Name / nama restoran</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>VA Number / VA jumlah</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Outlet PIC Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Outlet PIC Number</label>
+                <input type="text" class="form-control">
+              </div>
+              <hr/>
+              <p class="lead">How should we contact you in case of any queries? / Bagaimana kami harus menghubungi Anda jika ada pertanyaan?</p>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Email Address</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Phone Number / nomor telepon</label>
+                <input type="text" class="form-control">
+              </div>
+
+
+              <hr/>
+
+
+              <p class="lead">What would you like to change?</p>
+              <div class="check-item">
+                <input id="menuCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="menuCheckbox" class="img-check" onclick="toggleMenuCard();">
+                  <div class="icon menuCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Menu / Daftar Menu dan Harga</div>
+                    <div class="desc">Update Prices, Add Item, Update Item, Remove Item / Tambah dan edit detail menu</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label menu -->
+              </div><!-- ./check-item menu -->
+
+
+              <div class="check-item">
+                <input id="hoursCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="hoursCheckbox" class="img-check" onclick="toggleHoursCard();">
+                  <div class="icon hoursCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Operational Hours / Jam Operasional Cabang</div>
+                    <div class="desc">Change Operational Hours / Edit Jam Operasional Cabang</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label menu -->
+              </div><!-- ./check-item hours -->
+
+
+              <div class="check-item">
+                <input id="addressCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="addressCheckbox" class="img-check" onclick="toggleAddressCard();">
+                  <div class="icon addressCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Address / Alamat</div>
+                    <div class="desc">Update Address / Alamat Cabang</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label menu -->
+              </div><!-- ./check-item address -->
+
+              <div class="check-item">
+                <input id="photoCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="photoCheckbox" class="img-check" onclick="togglePhotoCard();">
+                  <div class="icon photoCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Photo Change / Perubahan Foto</div>
+                    <div class="desc">Update restaurant logo or banner</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label photo change -->
+              </div><!-- ./check-item photo change -->
+
+              <div class="check-item">
+                <input id="contactCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="contactCheckbox" class="img-check" onclick="toggleContactCard();">
+                  <div class="icon contactCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Contact Change / Perubahan Kontak</div>
+                    <div class="desc">Email or telephone, PIC contact change / Email atau Nomor Telepon</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label contact change -->
+              </div><!-- ./check-item contact change -->
+
+
+              <div class="check-item">
+                <input id="calendarCheckbox" type="checkbox" name="checkbox" value="value" class="hide">
+                <label for="calendarCheckbox" class="img-check" onclick="toggleCalendarCard();">
+                  <div class="icon calendarCheckbox">
+                  </div>
+                  <div class="text">
+                    <div class="title">Special Opening Hours / Jam Buka Khusus</div>
+                    <div class="desc">Update any special future opening hours</div>
+                  </div>
+                  <div class="dummy-checkbox"></div>
+                </label><!-- ./label contact change -->
+              </div><!-- ./check-item contact change -->
+            </div><!--./card-body-->
+          </div>
+        </div><!-- ./options-card -->
+
+
+        <div class="card menu" id="menuCard">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Menu
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body" id="menuCardBody">
+              <div class="form-group image-upload">
+                <label><span class="mandatory">*</span>Please upload your menu / Masukkan Foto Daftar Menu Seperti di Restoran</label>
+                <label for="addMenuFile"><img src="images/placeholder.svg"/></label>
+              </div>
+              <div id="menuForm">
+                <div class="form-group">
+                  <label><span class="mandatory">*</span>What would you like to do?</label>
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-addItem-tab" data-toggle="tab" href="#nav-addItem" role="tab" aria-controls="nav-addItem" aria-selected="true">Add Item / Tambah Hidangan</a>
+                      <a class="nav-item nav-link" data-toggle="tab">Update Item / Edit Hidangan</a>
+                      <a class="nav-item nav-link" id="nav-deleteItem-tab" data-toggle="tab" href="#nav-deleteItem" role="tab" aria-controls="nav-deleteItem" aria-selected="false">Delete Item / Harpus Hidangan</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-addItem" role="tabpanel" aria-labelledby="nav-addItem-tab">
+                      <div>
+                        <div class="form-group">
+                          <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                          <input type="text" class="form-control" placeholder="Beri nama hidangan ini">
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Price / Harga</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Description / Deskripsi</label>
+                          <textarea type="text" class="form-control" placeholder="Bahan-bahan, cara pembuatan, dll."></textarea>
+                        </div>
+
+                        <div class="form-group image-upload">
+                          <label>Add a photo / Pasang foto</label>
+                          <label for="addMenuFile">
+                            <img src="images/placeholder.svg"/>
+                          </label>
+                          <span>Hidangan dengan foto berkualitas tinggi biasanya jadi lebih populer. Maksimal 2 MB. Jenis foto yang diterima: PNG, JPG</span>
+                          <input id="addMenuFile" type="file" />
+                        </div>
+                      </div>
+                    </div><!--./add form-->
+
+                    <div class="tab-pane fade" id="nav-deleteItem" role="tabpanel" aria-labelledby="nav-deleteItem-tab">
+                      <div>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--./delete form-->
+                    <div class="menu-footer">
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Remove Item / menghapus</a>
+                    </div>
+                  </div>
+                </div><!-- #/ form-group -->
+
+                <div class="form-group" id="addMenu2">
+                  <hr/>
+                  <label><span class="mandatory">*</span>What would you like to do?</label>
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-addItem-tab2" data-toggle="tab" href="#nav-addItem2" role="tab" aria-controls="nav-addItem2" aria-selected="true">Add Item / Tambah Hidangan</a>
+                      <a class="nav-item nav-link" id="nav-editItem-tab" data-toggle="tab" href="#nav-editItem" role="tab" aria-controls="nav-editItem" aria-selected="false">Update Item / Edit Hidangan</a>
+                      <a class="nav-item nav-link" id="nav-deleteItem-tab" data-toggle="tab" href="#nav-deleteItem" role="tab" aria-controls="nav-deleteItem" aria-selected="false">Delete Item / Harpus Hidangan</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent2">
+                    <div class="tab-pane fade show active" id="nav-addItem2" role="tabpanel" aria-labelledby="nav-addItem-tab">
+                      <div>
+                        <div class="form-group">
+                          <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                          <input type="text" class="form-control" placeholder="Beri nama hidangan ini">
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Price / Harga</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Description / Deskripsi</label>
+                          <textarea type="text" class="form-control" placeholder="Bahan-bahan, cara pembuatan, dll."></textarea>
+                        </div>
+
+                        <div class="form-group image-upload">
+                          <label>Add a photo / Pasang foto</label>
+                          <label for="addMenuFile">
+                            <img src="images/placeholder.svg"/>
+                          </label>
+                          <span>Hidangan dengan foto berkualitas tinggi biasanya jadi lebih populer. Maksimal 2 MB. Jenis foto yang diterima: PNG, JPG</span>
+                          <input id="addMenuFile" type="file" />
+                        </div>
+                      </div>
+                    </div><!--./add form-->
+
+
+                    <div class="tab-pane fade" id="nav-editItem" role="tabpanel" aria-labelledby="nav-editItem-tab">
+                      <div>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group edit-menu">
+                          <label><span class="mandatory">*</span>What would you like to change? / Apa yang ingin Anda ubah?</label>
+                          <label><input type="checkbox" onclick="toggleUpdateName();">Item Name / Nama hidangan</label>
+                          <label><input type="checkbox" onclick="toggleUpdateCategory();">Category Name / Nama kategori</label>
+                          <label><input type="checkbox" onclick="toggleUpdatePrice();">Price / Harga</label>
+                          <label><input type="checkbox" onclick="toggleUpdatePhoto();">Photo / Foto</label>
+                          <label><input type="checkbox" onclick="toggleUpdateDesc();">Description / Deskripsi</label>
+                        </div>
+
+                        <div class="form-group" id="updateName">
+                          <label><span class="mandatory">*</span>New Item Name / Baru Nama hidangan</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+
+
+                        <div class="form-group" id="updateCategory">
+                          <label><span class="mandatory">*</span>New Category Name / Baru Nama kategori</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+
+                        <div class="form-group" id="updatePrice">
+                          <label><span class="mandatory">*</span>New Price / Baru harga</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+
+
+                        <div class="form-group" id="updateDesc">
+                          <label>New Description / Baru deskripsi</label>
+                          <textarea type="text" class="form-control"></textarea>
+                        </div>
+
+                        <div class="form-group image-upload" id="updatePhoto">
+                          <label>Photo / Baru foto</label>
+                          <label for="editMenuFile">
+                            <img src="images/placeholder.svg"/>
+                          </label>
+                          <input id="editMenuFile" type="file" />
+                        </div>
+                      </div>
+                    </div><!--./edit form-->
+
+                    <div class="tab-pane fade" id="nav-deleteItem" role="tabpanel" aria-labelledby="nav-deleteItem-tab">
+                      <div>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--./delete form-->
+
+
+
+                    <div class="menu-footer">
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Remove Item / menghapus</a>
+                    </div>
+                  </div>
+                </div><!-- #/ form-group -->
+              </div>
+
+
+
+            </div><!-- ./card-body-->
+          </div>
+        </div>
+
+
+        <div class="card" id="hoursCard">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Operational Hours / Jam Operasional Cabang
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-6">
+                      <label><span class="mandatory">*</span>Period / periode</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Everyday / Setiap hari</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label><span class="mandatory">*</span>Status</label>
+                      <select id="openingStatus1" class="form-control" onchange="openingStatus();">
+                        <option value="1">Open / Buka</option>
+                        <option value="2">Closed All Day / Tutup sepanjang hari</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group" id="openingHoursField">
+                  <div class="row">
+                    <div class="col-4">
+                      <!-- <label><span class="mandatory">*</span>From</label> -->
+                      <div class="input-group">
+                        <input type="text" placeholder="10:00" class="form-control timepicker"/>
+                        <div class="input-group-append">
+                          <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1 text-center time-col-table">
+                      <span></span>
+                    </div>
+                    <div class="col-4">
+                      <!-- <label><span class="mandatory">*</span>From</label> -->
+                      <div class="input-group">
+                        <input type="text" placeholder="19:00" class="form-control timepicker"/>
+                        <div class="input-group-append">
+                          <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-footer">
+                  <a onclick="toggleOpeningHours();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
+                  <a href="javascript:void(0);">Remove Item / menghapus</a>
+                </div>
+              </div><!-- ./openingHours1 -->
+
+              <div id="openingHours2">
+                <hr/>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-6">
+                      <label><span class="mandatory">*</span>Period / periode</label>
+                      <select class="form-control">
+                        <option>Everyday / Setiap hari</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label><span class="mandatory">*</span>Status</label>
+                      <select id="openingStatus2" class="form-control" onchange="openingStatus2();">
+                        <option value="1">Open / Buka</option>
+                        <option value="2">Closed All Day / Tutup sepanjang hari</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group" id="openingHoursField2">
+                  <div class="row">
+                    <div class="col-4">
+                      <!-- <label><span class="mandatory">*</span>From</label> -->
+                      <div class="input-group">
+                        <input type="text" placeholder="10:00" class="form-control timepicker"/>
+                        <div class="input-group-append">
+                          <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1 text-center time-col-table">
+                      <span></span>
+                    </div>
+                    <div class="col-4">
+                      <!-- <label><span class="mandatory">*</span>From</label> -->
+                      <div class="input-group">
+                        <input type="text" placeholder="19:00" class="form-control timepicker"/>
+                        <div class="input-group-append">
+                          <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-footer">
+                  <a href="javascript:void(0);">Add another / tambahkan yang lain</a>
+                  <a href="javascript:void(0);">Remove Item / menghapus</a>
+                </div>
+              </div><!-- ./openingHours1 -->
+
+
+            </div><!--./card-body-->
+          </div>
+        </div><!-- ./hours card -->
+
+        <div class="card" id="addressCard">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Address / Alamat
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-group">
+                <p><strong>Locate your new address below / Temukan alamat baru Anda di bawah ini</strong></p>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=gerpek%20bensu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Tips, remarks / tips, komentar"></textarea>
+              </div>
+            </div><!-- ./card-body -->
+          </div>
+        </div><!-- ./address card -->
+
+        <div class="card" id="photoCard">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Photo Change / Baru foto
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+              <p><strong>Please upload your new photo / Pasang foto</strong></p>
+              <div class="form-group">
+                <p>Logo Photo / Logo foto (1:1)</p>
+                <label for="addLogoFile">
+                  <img src="images/upload-logo.svg" width="150">
+                </label>
+                <input id="addLogoFile" type="file" class="hide-file-input">
+              </div>
+              <div class="form-group">
+                <p>Banner Photo/ Spanduk foto (9:4)</p>
+                <label for="addLogoFile">
+                  <img src="images/upload-banner.svg" height="150">
+                </label>
+                <input id="addLogoFile" type="file" class="hide-file-input">
+              </div>
+            </div><!--./card-body-->
+          </div>
+        </div><!-- photo card -->
+
+        <div class="card" id="contactCard">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Contact Change / Perubahan Kontak
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <p><strong>New Oulet PIC Info / Baru kontak informasi</strong></p>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Contact Name / Nama Kontak</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Phone Number / nomor telepon</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Email</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div><!-- ./contact card -->
+
+
+        <div class="card" id="calendarCard">
+          <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Special Opening Hours / Jam Buka Khusus
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-6">
+                    <label><span class="mandatory">*</span>From / tanggal dari</label>
+                    <div class="input-group">
+                      <input type="date" class="form-control"/>
+                      <div class="input-group-append">
+                        <span class="input-group-text"><img src="images/calendar-form.svg" width="15"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <label><span class="mandatory">*</span>To / tanggal sampai</label>
+                    <div class="input-group">
+                      <input type="date" class="form-control"/>
+                      <div class="input-group-append">
+                        <span class="input-group-text"><img src="images/calendar-form.svg" width="15"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <div class="row">
+                    <div class="col-12">
+                      <label><span class="mandatory">*</span>Status</label>
+                      <select id="specialOpeningStatus" class="form-control" onchange="specialOpeningStatus();">
+                        <option>Closed / Tutup</option>
+                        <option>Open / Buka</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="specialOpeningField">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="input-group">
+                      <input type="text" placeholder="10:00" class="form-control timepicker"/>
+                      <div class="input-group-append">
+                        <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1 text-center time-col-table">
+                    <span></span>
+                  </div>
+                  <div class="col-4">
+                    <div class="input-group">
+                      <input type="text" placeholder="19:00" class="form-control timepicker"/>
+                      <div class="input-group-append">
+                        <span class="input-group-text"><img src="images/clock-icon.svg" width="15"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-footer">
+                <a onclick="appendAddMenu();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
+                <a onclick="hideAddMenu();" href="javascript:void(0);">Remove Item / menghapus</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./calendar card -->
+
+
+
+        <div class="card" id="restaurantCard">
+          <div class="card-header" id="headingEight">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Restaurant Details
+                <span class="arrow"></span>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEight" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Restaurant Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>VA Number</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Outlet PIC Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Outlet PIC Number</label>
+                <input type="text" class="form-control">
+              </div>
+              <hr/>
+              <p><strong>How should we contact you in case of any queries?</strong></p>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Email Address</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label><span class="mandatory">*</span>Phone Number</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div><!-- ./restaurant card -->
+
+        <div class="submit-btn-div">
+          <button type="submit" class="btn btn-primary btn-block mt-3" data-toggle="modal" data-target="#reviewModal">Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Review your Changes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/review.png" style="width:100%;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="location.href='submit.html';">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+
+    // $('#reviewModal').on('shown.bs.modal', function () {
+    //   $('#myInput').trigger('focus')
+    // })
+
+      $('#restaurantCard').hide(); //not in use anymore
+      $("#menuCard").hide();
+      $("#hoursCard").hide();
+      $("#addressCard").hide();
+      $("#photoCard").hide();
+      $("#contactCard").hide();
+
+      $("#calendarCard").hide();
+
+      function toggleMenuCard() {
+        $("#menuCard").toggle();
+      }
+
+      function toggleHoursCard() {
+        $("#hoursCard").toggle();
+      }
+
+      function togglePhotoCard() {
+        $("#photoCard").toggle();
+      }
+
+      function toggleAddressCard() {
+        $("#addressCard").toggle();
+      }
+
+      function toggleContactCard() {
+        $("#contactCard").toggle();
+      }
+
+      function toggleCalendarCard() {
+        $("#calendarCard").toggle();
+      }
+
+      $("#updateName").hide();
+      function toggleUpdateName() {
+        $("#updateName").toggle();
+      }
+
+      $("#updateCategory").hide();
+      function toggleUpdateCategory() {
+        $("#updateCategory").toggle();
+      }
+
+      $("#updatePrice").hide();
+      function toggleUpdatePrice() {
+        $("#updatePrice").toggle();
+      }
+
+      $("#updatePhoto").hide();
+      function toggleUpdatePhoto() {
+        $("#updatePhoto").toggle();
+      }
+
+      $("#updateDesc").hide();
+      function toggleUpdateDesc() {
+        $("#updateDesc").toggle();
+      }
+
+
+      $(function() {
+        $('.timepicker').timepicker({
+          //timeFormat: 'h:mm p',
+          dynamic: false,
+          dropdown: true,
+          scrollbar: true
+        });
+      });
+
+      function openingStatus() {
+        var selected = document.getElementById("openingStatus1").value;
+        if (selected == '2') {
+          $('#openingHoursField').hide();
+        } else {
+          $('#openingHoursField').show();
+        }
+      }
+
+      function openingStatus2() {
+        var selected = document.getElementById("openingStatus2").value;
+        if (selected == '2') {
+          $('#openingHoursField2').hide();
+        } else {
+          $('#openingHoursField2').show();
+        }
+      }
+
+      $('#specialOpeningField').hide();
+
+      function specialOpeningStatus() {
+        var selected = document.getElementById("specialOpeningStatus").value;
+        if (selected == 'Closed') {
+          $('#specialOpeningField').hide();
+        } else {
+          $('#specialOpeningField').show();
+        }
+      }
+
+      $("#addMenu2").hide();
+      function toggleNewMenu() {
+        $("#addMenu2").toggle();
+      }
+
+      $("#openingHours2").hide();
+      function toggleOpeningHours() {
+        $("#openingHours2").toggle();
+      }
+
+
+    </script>
+  </body>
+</html>

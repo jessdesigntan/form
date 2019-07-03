@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/24px/Arrow/chevron-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.6818705,7.09859375 L20.4902946,14.6901172 C20.8668884,15.05625 20.8668884,15.6498438 20.4902946,16.0159375 L19.579567,16.9013672 C19.2036161,17.266875 18.594308,17.2675781 18.2174732,16.9029297 L12,10.8865234 L5.78256696,16.9029688 C5.40573214,17.2676172 4.79642411,17.2669141 4.42047321,16.9014063 L3.50974554,16.0159766 C3.13315179,15.6498438 3.13315179,15.05625 3.50974554,14.6901563 L11.3181696,7.09863281 C11.6947232,6.7325 12.3052768,6.7325 12.6818705,7.09859375 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Segment-Tab" transform="translate(-1115.000000, -26.000000)">
+            <g id="icons/24px/Arrow/chevron-up" transform="translate(1124.000000, 32.000000) scale(1, -1) translate(-1124.000000, -32.000000) translate(1112.000000, 20.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g fill-rule="nonzero"></g>
+                <g id="✱-/-Color-/-Icons-/-Black-/-Disabled" mask="url(#mask-2)" fill="#000000" fill-opacity="0.38" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
