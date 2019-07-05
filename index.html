@@ -30,13 +30,13 @@
 
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" >
             <div class="card-body">
-              <p class="lead">Please fill up your restaurant details./ Silakan isi detail restoran.</p>
+              <p class="lead">Silakan isi detail restoran.</p>
               <div class="form-group">
-                <label><span class="mandatory">*</span>Restaurant Name / nama restoran</label>
+                <label><span class="mandatory">*</span>Nama restoran</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
-                <label>VA Number / Nomor VA</label>
+                <label>Nomor VA</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
@@ -48,7 +48,7 @@
                 <input type="text" class="form-control">
               </div>
               <hr/>
-              <p class="lead">How should we contact you in case of any queries? / Bagaimana kami bisa menghubungi Anda jika ada pertanyaan?</p>
+              <p class="lead">Bagaimana kami bisa menghubungi Anda jika ada pertanyaan?</p>
               <div class="form-group">
                 <label><span class="mandatory">*</span>Alamat Email </label>
                 <input type="text" class="form-control">
@@ -69,7 +69,7 @@
                   <div class="icon menuCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Menu / Daftar Menu dan Harga</div>
+                    <div class="title">Daftar Menu dan Harga</div>
                     <div class="desc">Tambah dan ubah detail menu dan harga</div>
                   </div>
                   <div class="dummy-checkbox"></div>
@@ -83,8 +83,8 @@
                   <div class="icon hoursCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Operational Hours / Jam Operasional</div>
-                    <div class="desc">Change Operational Hours / Ubah Jam Operasional</div>
+                    <div class="title">Jam Operasional</div>
+                    <div class="desc">Ubah Jam Operasional</div>
                   </div>
                   <div class="dummy-checkbox"></div>
                 </label><!-- ./label menu -->
@@ -97,8 +97,8 @@
                   <div class="icon addressCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Address / Alamat</div>
-                    <div class="desc">Update Address / Ubah Alamat</div>
+                    <div class="title">Alamat</div>
+                    <div class="desc">Ubah Alamat</div>
                   </div>
                   <div class="dummy-checkbox"></div>
                 </label><!-- ./label menu -->
@@ -110,8 +110,8 @@
                   <div class="icon photoCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Photo Change / Perbarui Tampilan</div>
-                    <div class="desc">Update restaurant logo or banner / Perbarui logo atau banner</div>
+                    <div class="title">Perbarui Tampilan</div>
+                    <div class="desc">Perbarui logo atau banner</div>
                   </div>
                   <div class="dummy-checkbox"></div>
                 </label><!-- ./label photo change -->
@@ -123,8 +123,8 @@
                   <div class="icon contactCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Contact Change / Perbarui Kontak</div>
-                    <div class="desc">Email or telephone, PIC contact change / Nama, Alamat Email atau Nomor Telepon</div>
+                    <div class="title">Perbarui Kontak</div>
+                    <div class="desc">Nama, Alamat Email atau Nomor Telepon</div>
                   </div>
                   <div class="dummy-checkbox"></div>
                 </label><!-- ./label contact change -->
@@ -137,8 +137,8 @@
                   <div class="icon calendarCheckbox">
                   </div>
                   <div class="text">
-                    <div class="title">Special Opening Hours / Jam Operasional Khusus</div>
-                    <div class="desc">Update any special future opening hours/ Perbarui waktu jam operasional</div>
+                    <div class="title">Jam Operasional Khusus</div>
+                    <div class="desc">Perbarui waktu jam operasional</div>
                   </div>
                   <div class="dummy-checkbox"></div>
                 </label><!-- ./label contact change -->
@@ -161,16 +161,18 @@
           <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body" id="menuCardBody">
               <div class="form-group image-upload">
-                <label><span class="mandatory">*</span>Please upload your menu / Masukkan Foto Daftar Menu Seperti di Restoran</label>
-                <label for="addMenuFile"><img src="images/placeholder.svg"/></label>
+                <label><span class="mandatory">*</span>Masukkan Foto Daftar Menu Seperti di Restoran</label>
+                <label for="addMenuFile">
+                  <img style="width:50px;" src="images/placeholder.png"/>
+                </label>
               </div>
               <div id="menuForm">
                 <div class="form-group">
-                  <label><span class="mandatory">*</span>What would you like to do? / Perubahan apa yang Anda ingin lakukan?</label>
+                  <label><span class="mandatory">*</span>Perubahan apa yang Anda ingin lakukan?</label>
                   <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                       <a class="nav-item nav-link active" id="nav-addItem-tab" data-toggle="tab" href="#nav-addItem" role="tab" aria-controls="nav-addItem" aria-selected="true">Add Item / Tambah Hidangan</a>
-                      <a class="nav-item nav-link" data-toggle="tab">Update Item / Ubah Hidangan</a>
+                      <a class="nav-item nav-link" data-toggle="tab">Ubah Hidangan</a>
                       <a class="nav-item nav-link" id="nav-deleteItem-tab" data-toggle="tab" href="#nav-deleteItem" role="tab" aria-controls="nav-deleteItem" aria-selected="false">Delete Item / Hapus Hidangan</a>
                     </div>
                   </nav>
@@ -178,34 +180,34 @@
                     <div class="tab-pane fade show active" id="nav-addItem" role="tabpanel" aria-labelledby="nav-addItem-tab">
                       <div>
                         <div class="form-group">
-                          <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                          <label><span class="mandatory">*</span>Nama hidangan</label>
                           <input type="text" class="form-control" placeholder="Beri nama hidangan ini">
                         </div>
 
                         <div class="row">
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <label><span class="mandatory">*</span>Nama kategori</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Price / Harga</label>
+                              <label><span class="mandatory">*</span>Harga</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                         </div>
 
                         <div class="form-group">
-                          <label>Description / Deskripsi Makanan</label>
+                          <label>Deskripsi Makanan</label>
                           <textarea type="text" class="form-control" placeholder="Bahan-bahan, cara pembuatan, dll."></textarea>
                         </div>
 
                         <div class="form-group image-upload">
-                          <label>Add a photo / Tambahkan foto makanan</label>
+                          <label>Tambahkan foto makanan</label>
                           <label for="addMenuFile">
-                            <img src="images/placeholder.svg"/>
+                            <img style="width:50px;" src="images/placeholder.png"/>
                           </label>
                           <span>Hidangan dengan foto berkualitas tinggi biasanya jadi lebih populer. Maksimal 2 MB. Jenis foto yang diterima: PNG, JPG</span>
                           <input id="addMenuFile" type="file" />
@@ -218,13 +220,13 @@
                         <div class="row">
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                              <label><span class="mandatory">*</span>Nama hidangan</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <label><span class="mandatory">*</span>Nama kategori</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
@@ -232,54 +234,54 @@
                       </div>
                     </div><!--./delete form-->
                     <div class="menu-footer">
-                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
-                      <a onclick="toggleNewMenu();" href="javascript:void(0);">Remove Item / menghapus</a>
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">tambahkan yang lain</a>
+                      <a onclick="toggleNewMenu();" href="javascript:void(0);">menghapus</a>
                     </div>
                   </div>
                 </div><!-- #/ form-group -->
 
                 <div class="form-group" id="addMenu2">
                   <hr/>
-                  <label><span class="mandatory">*</span>What would you like to do?</label>
+                  <label><span class="mandatory">*</span>Perubahan apa yang Anda ingin lakukan?</label>
                   <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a class="nav-item nav-link active" id="nav-addItem-tab2" data-toggle="tab" href="#nav-addItem2" role="tab" aria-controls="nav-addItem2" aria-selected="true">Add Item / Tambah Hidangan</a>
-                      <a class="nav-item nav-link" id="nav-editItem-tab" data-toggle="tab" href="#nav-editItem" role="tab" aria-controls="nav-editItem" aria-selected="false">Update Item / Edit Hidangan</a>
-                      <a class="nav-item nav-link" id="nav-deleteItem-tab" data-toggle="tab" href="#nav-deleteItem" role="tab" aria-controls="nav-deleteItem" aria-selected="false">Delete Item / Harpus Hidangan</a>
+                      <a class="nav-item nav-link active" id="nav-addItem-tab2" data-toggle="tab" href="#nav-addItem2" role="tab" aria-controls="nav-addItem2" aria-selected="true">Tambah Hidangan</a>
+                      <a class="nav-item nav-link" id="nav-editItem-tab" data-toggle="tab" href="#nav-editItem" role="tab" aria-controls="nav-editItem" aria-selected="false">Edit Hidangan</a>
+                      <a class="nav-item nav-link" id="nav-deleteItem-tab" data-toggle="tab" href="#nav-deleteItem" role="tab" aria-controls="nav-deleteItem" aria-selected="false">Harpus Hidangan</a>
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent2">
                     <div class="tab-pane fade show active" id="nav-addItem2" role="tabpanel" aria-labelledby="nav-addItem-tab">
                       <div>
                         <div class="form-group">
-                          <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                          <label><span class="mandatory">*</span>Nama hidangan</label>
                           <input type="text" class="form-control" placeholder="Beri nama hidangan ini">
                         </div>
 
                         <div class="row">
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <label><span class="mandatory">*</span>Nama kategori</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Price / Harga</label>
+                              <label><span class="mandatory">*</span>Harga</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                         </div>
 
                         <div class="form-group">
-                          <label>Description / Deskripsi</label>
+                          <label>Deskripsi</label>
                           <textarea type="text" class="form-control" placeholder="Bahan-bahan, cara pembuatan, dll."></textarea>
                         </div>
 
                         <div class="form-group image-upload">
-                          <label>Add a photo / Pasang foto</label>
+                          <label>Pasang foto</label>
                           <label for="addMenuFile">
-                            <img src="images/placeholder.svg"/>
+                            <img style="width:50px;" src="images/placeholder.png"/>
                           </label>
                           <span>Hidangan dengan foto berkualitas tinggi biasanya jadi lebih populer. Maksimal 2 MB. Jenis foto yang diterima: PNG, JPG</span>
                           <input id="addMenuFile" type="file" />
@@ -293,56 +295,56 @@
                         <div class="row">
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Item Name / Nama hidangan</label>
+                              <label><span class="mandatory">*</span>Nama hidangan</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="form-group">
-                              <label><span class="mandatory">*</span>Category Name / Nama kategori</label>
+                              <label><span class="mandatory">*</span>Nama kategori</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
                         </div>
 
                         <div class="form-group edit-menu">
-                          <label><span class="mandatory">*</span>What would you like to change? / Apa yang ingin Anda ubah?</label>
-                          <label><input type="checkbox" onclick="toggleUpdateName();">Item Name / Nama hidangan</label>
-                          <label><input type="checkbox" onclick="toggleUpdateCategory();">Category Name / Nama kategori</label>
-                          <label><input type="checkbox" onclick="toggleUpdatePrice();">Price / Harga</label>
-                          <label><input type="checkbox" onclick="toggleUpdatePhoto();">Photo / Foto</label>
-                          <label><input type="checkbox" onclick="toggleUpdateDesc();">Description / Deskripsi</label>
+                          <label><span class="mandatory">*</span>Apa yang ingin Anda ubah?</label>
+                          <label><input type="checkbox" onclick="toggleUpdateName();">Nama hidangan</label>
+                          <label><input type="checkbox" onclick="toggleUpdateCategory();">Nama kategori</label>
+                          <label><input type="checkbox" onclick="toggleUpdatePrice();">Harga</label>
+                          <label><input type="checkbox" onclick="toggleUpdatePhoto();">Foto</label>
+                          <label><input type="checkbox" onclick="toggleUpdateDesc();">Deskripsi</label>
                         </div>
 
                         <div class="form-group" id="updateName">
-                          <label><span class="mandatory">*</span>New Item Name / Baru Nama hidangan</label>
+                          <label><span class="mandatory">*</span>Baru Nama hidangan</label>
                           <input type="text" class="form-control">
                         </div>
 
 
 
                         <div class="form-group" id="updateCategory">
-                          <label><span class="mandatory">*</span>New Category Name / Baru Nama kategori</label>
+                          <label><span class="mandatory">*</span>Baru Nama kategori</label>
                           <input type="text" class="form-control">
                         </div>
 
 
                         <div class="form-group" id="updatePrice">
-                          <label><span class="mandatory">*</span>New Price / Baru harga</label>
+                          <label><span class="mandatory">*</span>Baru harga</label>
                           <input type="text" class="form-control">
                         </div>
 
 
 
                         <div class="form-group" id="updateDesc">
-                          <label>New Description / Baru deskripsi</label>
+                          <label>Baru deskripsi</label>
                           <textarea type="text" class="form-control"></textarea>
                         </div>
 
                         <div class="form-group image-upload" id="updatePhoto">
-                          <label>Photo / Baru foto</label>
+                          <label>Baru foto</label>
                           <label for="editMenuFile">
-                            <img src="images/placeholder.svg"/>
+                            <img style="width:50px;" src="images/placeholder.png"/>
                           </label>
                           <input id="editMenuFile" type="file" />
                         </div>
@@ -389,7 +391,7 @@
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Operational Hours / Jam Operasional Cabang
+                Jam Operasional Cabang
                 <span class="arrow"></span>
               </button>
             </h2>
@@ -400,9 +402,9 @@
                 <div class="form-group">
                   <div class="row">
                     <div class="col-6">
-                      <label><span class="mandatory">*</span>Period / periode</label>
+                      <label><span class="mandatory">*</span>Periode</label>
                       <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Everyday / Setiap hari</option>
+                        <option>Setiap hari</option>
                         <option>Monday</option>
                         <option>Tuesday</option>
                         <option>Wednesday</option>
@@ -415,8 +417,8 @@
                     <div class="col-6">
                       <label><span class="mandatory">*</span>Status</label>
                       <select id="openingStatus1" class="form-control" onchange="openingStatus();">
-                        <option value="1">Open / Buka</option>
-                        <option value="2">Closed All Day / Tutup sepanjang hari</option>
+                        <option value="1">Buka</option>
+                        <option value="2">Tutup sepanjang hari</option>
                       </select>
                     </div>
                   </div>
@@ -447,8 +449,8 @@
                   </div>
                 </div>
                 <div class="menu-footer">
-                  <a onclick="toggleOpeningHours();" href="javascript:void(0);">Add another / tambahkan yang lain</a>
-                  <a href="javascript:void(0);">Remove Item / menghapus</a>
+                  <a onclick="toggleOpeningHours();" href="javascript:void(0);">tambahkan yang lain</a>
+                  <a href="javascript:void(0);">menghapus</a>
                 </div>
               </div><!-- ./openingHours1 -->
 
@@ -457,9 +459,9 @@
                 <div class="form-group">
                   <div class="row">
                     <div class="col-6">
-                      <label><span class="mandatory">*</span>Period / periode</label>
+                      <label><span class="mandatory">*</span>Periode</label>
                       <select class="form-control">
-                        <option>Everyday / Setiap hari</option>
+                        <option>Setiap hari</option>
                         <option>Monday</option>
                         <option>Tuesday</option>
                         <option>Wednesday</option>
@@ -472,8 +474,8 @@
                     <div class="col-6">
                       <label><span class="mandatory">*</span>Status</label>
                       <select id="openingStatus2" class="form-control" onchange="openingStatus2();">
-                        <option value="1">Open / Buka</option>
-                        <option value="2">Closed All Day / Tutup sepanjang hari</option>
+                        <option value="1">Buka</option>
+                        <option value="2">Tutup sepanjang hari</option>
                       </select>
                     </div>
                   </div>
@@ -504,8 +506,8 @@
                   </div>
                 </div>
                 <div class="menu-footer">
-                  <a href="javascript:void(0);">Add another / tambahkan yang lain</a>
-                  <a href="javascript:void(0);">Remove Item / menghapus</a>
+                  <a href="javascript:void(0);">tambahkan yang lain</a>
+                  <a href="javascript:void(0);">menghapus</a>
                 </div>
               </div><!-- ./openingHours1 -->
 
@@ -599,7 +601,7 @@
           <div class="card-header" id="headingSeven">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Special Opening Hours / Jam Buka Khusus
+                Jam Buka Khusus
                 <span class="arrow"></span>
               </button>
             </h2>
@@ -609,7 +611,7 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-6">
-                    <label><span class="mandatory">*</span>From /  dari</label>
+                    <label><span class="mandatory">*</span>Dari</label>
                     <div class="input-group">
                       <input type="date" class="form-control"/>
                       <div class="input-group-append">
@@ -618,7 +620,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label><span class="mandatory">*</span>To /  sampai</label>
+                    <label><span class="mandatory">*</span>Sampai</label>
                     <div class="input-group">
                       <input type="date" class="form-control"/>
                       <div class="input-group-append">
@@ -632,8 +634,8 @@
                     <div class="col-12">
                       <label><span class="mandatory">*</span>Status</label>
                       <select id="specialOpeningStatus" class="form-control" onchange="specialOpeningStatus();">
-                        <option>Closed / Tutup</option>
-                        <option>Open / Buka</option>
+                        <option value="1">Tutup</option>
+                        <option value="2">Buka</option>
                       </select>
                     </div>
                   </div>
@@ -744,7 +746,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Review your Changes / Silahkan periksa perubahan berikut</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Silahkan periksa perubahan berikut</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -753,7 +755,7 @@
             <img src="images/review.png" style="width:100%;">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-line" data-dismiss="modal">Close/ Keluar</button>
+            <button type="button" class="btn btn-line" data-dismiss="modal">Keluar</button>
             <button type="button" class="btn btn-primary" onclick="location.href='submit.html';"> perubahan</button>
           </div>
         </div>
@@ -857,7 +859,7 @@
 
       function specialOpeningStatus() {
         var selected = document.getElementById("specialOpeningStatus").value;
-        if (selected == 'Closed') {
+        if (selected == '1') {
           $('#specialOpeningField').hide();
         } else {
           $('#specialOpeningField').show();
